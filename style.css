@@ -1,0 +1,43 @@
+div.wrapper {
+    height: 80vh;
+    width: 80vw;
+    margin: auto;
+    position: relative;
+    background-color: #aaa;
+    border: 2px solid #aaa;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #eee;
+  }
+  #dropzone {
+    width: 80vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin: auto;
+    border: 2px dashed #aaa;
+    cursor: pointer;
+  }
+  #dropzone p {
+    margin: auto;
+  }
+  #container {
+    display: flex;
+    justify-content: center; /* Center the thumbnails horizontally */
+    align-items: center; /* Center the thumbnails vertically */
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .thumbnail {
+    display: inline;
+    margin: 10px;
+    border: 1px solid #aaa;
+    padding: 5px;
+    cursor: move;
+    width: 100px;
+    height: 100px;
+  }
+  button {
+    margin: 10px;
+  }

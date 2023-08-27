@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.6.0/jszip.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VR Tour Generator</title>
+  </head>
+  <body>
+    <h1>VR Tour Generator</h1>
+    <div id="dropzone">
+      <p>Drag and drop photos here to upload.</p>
+    </div>
+    <h2>Reorder photos as you wish.</h2>
+    <div id="container"></div>
+
+    <div id="settingsForm">
+      <h2>Settings</h2>
+      <label for="radius">Navigation radius:</label>
+      <input type="number" id="radius" name="radius" value="2" />
+    
+      <label for="width">Image width:</label>
+      <input type="number" id="width" name="width" value="1" />
+    
+      <label for="height">Image height:</label>
+      <input type="number" id="height" name="height" value="1" />
+    
+    </div>
+    <button id="simulateButton">Simulate</button>
+
+    <div class="wrapper">
+      <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+      <script src="https://unpkg.com/aframe-look-at-component/dist/aframe-look-at-component.min.js"></script>
+      <a-scene embedded  cursor="rayOrigin: mouse" raycaster="objects: a-image">
+        <a-sky id="sky" radius="100" color="#5df"></a-sky>
+        <a-camera position="0 0 0">
+        </a-camera>
+
+        <a-entity id="hotspots"></a-entity>
+      </a-scene>
+      <script src="hotspot.js"></script>
+    </div>
+    <button id="downloadButton">Download</button>
+
+  </body>
+
+  <script src="download.js"></script>
+  <script src="reorder.js"></script>
+  <script src="upload.js"></script>
+  <script src="simulation.js"></script>
+</html>
