@@ -12,6 +12,7 @@ The VR Tour Generator is a simple web-based tool that allows users to create and
   - [Features](#features)
   - [Getting Started](#getting-started)
   - [Usage](#usage)
+  - [Modes](#modes)
   - [Components](#components)
   - [Scripts](#scripts)
   - [Dependencies](#dependencies)
@@ -37,10 +38,18 @@ To get started with the VR Tour Generator, simply include the provided scripts a
 
 - **Uploading Photos**: Drag and drop photos into the designated dropzone area to upload them.
 - **Ordering Photos**: Arrange the uploaded photos by dragging and dropping them within the thumbnail container.
-- **Adjusting Settings**: Modify the tour settings (radius, width, height) in the settings form.
+- **Adjusting Settings**: Modify the tour settings (radius, width, height, mode) in the settings form.
 - **Simulating Tour**: Click the "Simulate" button to preview the VR tour with the chosen settings and photo arrangement.
 - **Downloading Tour**: After arranging the tour, use the "Download" button to save the VR tour package.
 - **Uploading Tour**: After downloading the package, unzip it and publish it on any web server or hosting platform of your choice.
+
+## Modes
+
+- **VR**: Recommended for any VR devices that support gamepads.
+- **Mouse**: Recommended for pc based experiences.
+- **Touch**: Recommended for mobile based experiences.
+- **Gaze**: Recommended for any VR devices that do not support gamepads (e.g. google cardboard).
+- **All**: It is also possible to support all modes at once.
 
 ## Components
 

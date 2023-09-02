@@ -17,11 +17,11 @@ downloadButton.addEventListener("click", () => {
   const folder = zip.folder("VRTour");
 
   // Fetch the content of components.js
-  fetch("hotspot.js")
+  fetch("components.js")
     .then(response => response.text())
     .then(componentsContent => {
       // Include the fetched components content in the ZIP folder
-      folder.file("hotspot.js", componentsContent);
+      folder.file("components.js", componentsContent);
 
       orderedPhotos.forEach((imageUrl, index) => {
         fetch(imageUrl)
