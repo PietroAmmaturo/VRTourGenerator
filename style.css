@@ -22,6 +22,10 @@ div.wrapper {
   #dropzone p {
     margin: auto;
   }
+  #dropzone input {
+    display: block;
+    margin: auto;
+}
   #container {
     display: flex;
     justify-content: center; /* Center the thumbnails horizontally */
